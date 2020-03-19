@@ -373,7 +373,7 @@ or = "\\x.\\y.y true (x true false)"
   isZero n = False
 -}
 isZero :: String
-isZero = "notimplemented"
+isZero = "\\x. x (\y. false) true"
 
 -- </Задачи для самостоятельного решения>
 
