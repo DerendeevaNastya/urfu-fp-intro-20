@@ -309,7 +309,7 @@ not = "\\x.x false true"
     - and false false ->> false
 -}
 and :: String
-and = "\\x.\\y.not y false (not x false true)"
+and = "\\x.\\y.y (x true false) false"
 
 {-
   Напишите терм `or`:
