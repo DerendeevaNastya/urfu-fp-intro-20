@@ -309,7 +309,7 @@ not = "\\x.x false true"
     - and false false ->> false
 -}
 and :: String
-and = "\\x y.ifelse x ifelse y true false"
+and = "\\x.\\y.not y false (not x false true)"
 
 {-
   Напишите терм `or`:
@@ -320,7 +320,7 @@ and = "\\x y.ifelse x ifelse y true false"
     - or false false ->> false
 -}
 or :: String
-or = "notimplemented"
+or = "\\x.\\y.y true (x true false)"
 -- </Задачи для самостоятельного решения>
 
 {-
